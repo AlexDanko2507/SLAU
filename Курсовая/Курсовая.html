@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="method.js"></script>
+	<title>Курсач</title>
+</head>
+<body onload="readKol()">
+<div id="page-wrap">
+<header><span id="slau">SLAU</span><span class="right"><span class="contact"><a class="ahead" href="#openModal"  title="О программе">О программе</a></span> <span class="contact"><a class="ahead" href="#openModal2" title="Инструкция">Инструкция</a></span></span></header>
+
+<div id="mathUR">
+Введите количество уравнений:
+<input type="number" size="2" value="2" id="kol" onchange="readKol()">
+<br><br>
+<table id="matrix" border="0" cellpadding="5" cellspacing="0"></table>
+<br>
+Выберите метод решения:
+<select id="method" onchange="visibleEps()">
+	<option selected="selected">Метод Гаусса</option>
+	<option>Метод Гаусса с выбором главного элемента</option>
+	<option>Метой Зейделя</option>
+</select>
+<span id="epsvalue">
+Точность:
+<input type="text" size="7" id="valEps" value="0">
+</span>
+<br><br>
+<input type="button" class="button" id="butRes" onclick="methods()" value="Вычислить">
+</div>
+<div id="answer"></div>
+
+<div id="openModal" class="modalDialog">
+	<div id="win1">
+		<a href="#close" title="Закрыть" class="close">×</a>
+		<div id="title">О программе</div>
+		<div id="border">
+		<center>
+		<h2>SLAU v1.0</h2>
+		<h6>Copyright &copy; 2017</h6>
+		<hr>
+		<h4>Alex Danko</h4>
+		<h5>vk.com/alex_danko</h5>
+		<div style="border: 1px solid silver; border-radius: 10px;">
+		<h5>Работу выполнил студент</h5>
+		<h5>группы I-41</h5>
+		<h5>Дао Минь Хоанг</h5>
+		</div>
+		</center>
+		</div>
+	</div>
+</div>
+
+<div id="openModal2" class="modalDialog">
+	<div id="win2">
+		<a href="#close" title="Закрыть" class="close">×</a>
+		<div id="title2">Инструкция</div>
+		<div id="border2">
+		<center>
+		<h2>Ввод данных</h2>
+		<h5>Можно вводить десятичные числа и дроби</h5>
+		<h5>Если переменная отсутствует, то введите 0</h5>
+		<hr>
+		<h2>Переключение между полями ввода</h2>
+		<h5>Для переключение между полями ввода можно использовать мышь, клавишу [TAB] или зажатую клавишу [CTRL]+[UP],[DOWN],[LEFT],[RIGHT]</h5>
+		<hr> 
+		<h2>Пример</h2>
+		<hr style="width: 90px">
+		<h5>2x<sub>1</sub>-0.5x<sub>2</sub>=3</h5>
+		<h5>2x<sub>1</sub>+0.5x<sub>2</sub>=1</h5>
+		<div style="border: 2px solid silver; width: 350px;border-radius: 10px;">
+		<table border="0" cellpadding="5" cellspacing="0" style="display: inline-block;">
+			<caption style="text-align:left; font-style: italic;">Матрица коэффицентов</caption>
+			<tr><td><input type="text" value="2" size="7" readonly></td><td><input type="text" value="-0.5" size="7" readonly></td></tr>
+			<tr><td><input type="text" value="2" size="7" readonly></td><td><input type="text" value="0.5" size="7" readonly></td></tr>
+		</table>
+		<table border="0" cellpadding="5" cellspacing="0" style="display: inline-block;margin-left: 15px;">
+			<caption style="text-align:left; font-style: italic;">Свободные члены</caption>
+			<tr><td><input type="text" value="3" size="7" readonly></td></tr>
+			<tr><td><input type="text" value="1" size="7" readonly></td></tr>
+		</table>
+		</div>
+		</center>
+		</div>
+	</div>
+</div>
+
+</div>
+<footer><span class="left">Все права защищены &copy; 2017</span>
+<span id="social"><img src="img/vk.png" alt="VK" title="VK"><img src="img/fb.png" alt="fb" title="fb"><img src="img/inst.png" alt="instagram" title="instagram"><img src="img/twitter.png" alt="twitter" title="twitter"></span></footer>
+</body>
+</html>

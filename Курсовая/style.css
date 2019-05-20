@@ -1,0 +1,297 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html{height: 100%;}
+body{
+	width: 100%;
+	height: 100%;
+	color:#333;
+	background: #edeef0;
+	font-size: 1em;
+	font-family: "Segoe UI", sans-serif;
+	line-height: 135%;
+}
+
+header, footer {
+width: 700px;
+background-color: #45688e;
+margin: auto;
+}
+
+header{
+padding: 1%;
+border-radius: 0 0 15px 15px;
+}
+
+footer{
+padding-bottom: 4%;
+padding: 1.5%;
+border-radius: 15px 15px 0 0;
+margin-top: 10px;
+}
+
+#page-wrap:after {
+	content: "";
+	display: block;
+}
+
+footer, #page-wrap:after {height: 10px;}
+
+#page-wrap{
+	min-height: 92.4%;
+	margin-bottom: -10px;
+}
+
+#mathUR{
+	width: 700px;
+    padding: 10px;
+    margin: auto; 
+    border-radius: 15px;
+    border: 1px solid silver;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    overflow: auto;
+    max-height:350px;
+    white-space:nowrap;
+}
+
+.left{float: left;}
+.right{float: right;}
+span{
+color: #FFFFFF;
+}
+
+img{
+	max-width: 2.9%;
+	height: auto;
+	width: auto\9;
+}
+
+#social{
+	margin-left: 150px;
+}
+
+footer img{
+	float: right;
+	width: 3.5%;
+	margin-left: 5px;
+}
+
+.button {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #4276ad), color-stop(1, #4675a3));
+	background:-moz-linear-gradient(top, #4276ad 5%, #4675a3 100%);
+	background:-webkit-linear-gradient(top, #4276ad 5%, #4675a3 100%);
+	background:-o-linear-gradient(top, #4276ad 5%, #4675a3 100%);
+	background:-ms-linear-gradient(top, #4276ad 5%, #4675a3 100%);
+	background:linear-gradient(to bottom, #4276ad 5%, #4675a3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4276ad', endColorstr='#4675a3',GradientType=0);
+	background-color:#4276ad;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #45688e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #7a8eb9;
+}
+.button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #4675a3), color-stop(1, #4276ad));
+	background:-moz-linear-gradient(top, #45688e 5%, #4276ad 100%);
+	background:-webkit-linear-gradient(top, #45688e 5%, #4276ad 100%);
+	background:-o-linear-gradient(top, #45688e 5%, #4276ad 100%);
+	background:-ms-linear-gradient(top, #45688e 5%, #4276ad 100%);
+	background:linear-gradient(to bottom, #45688e 5%, #4276ad 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#45688e', endColorstr='#4276ad',GradientType=0);
+	background-color:#45688e;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+#slau{
+	font-size: 1.5em;
+	font-family: normal 16px/1 Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	height: 0px;
+}
+
+.contact{
+font-size: 1.5em;
+font-family: Comic Sans MS, sans-serif;
+margin-left: 20px;
+}
+
+.ahead {
+	color: #FFFFFF;
+	display: inline;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	float: right;
+	width: 98px;
+	margin: -14px 0 0;
+	padding: 17px;
+	overflow: hidden;
+	border: none;
+	font: normal 16px/1 Arial, Helvetica, sans-serif;
+	color: rgba(255,255,255,1);
+	text-align: center;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	background: #45688e;
+	-webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0.3) ;
+	box-shadow: 0 0 0 0 rgba(0,0,0,0.3) ;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+	text-decoration: none;
+	transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+}
+
+.ahead:hover {
+	background: #44607F;
+	text-decoration: none;
+	transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+}
+
+.ahead:active{color: #8ce4a6}
+
+#matrix{
+	display: inline-block;
+}
+
+#answer{
+	width: 700px;
+	height: 290px;
+    padding: 10px;
+    margin: auto; 
+    border-radius: 15px;
+    border: 1px solid silver;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    max-height: 290px;
+}
+
+
+.modalDialog {
+position: fixed;
+font-family: Arial, Helvetica, sans-serif;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(0,0,0,0.8);
+z-index: 99999;
+-webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+display: none;
+pointer-events: none;
+}
+
+.modalDialog:target {
+display: block;
+pointer-events: auto;
+}
+
+#win1 {
+width: 300px;
+position: relative;
+margin: 10% auto;
+padding: 5px 20px 13px 20px;
+background: #fff;
+}
+
+#win2 {
+width: 600px;
+position: relative;
+margin: 10% auto;
+padding: 5px 20px 13px 20px;
+background: #fff;
+}
+
+.close {
+background: #45688e;
+color: #DDE3E3;
+line-height: 25px;
+position: absolute;
+right: 20px;
+text-align: center;
+top: 12px;
+width: 24px;
+text-decoration: none;
+font-size: 20px;
+}
+
+.close:hover { color: #FFFFFF; }
+
+#title{
+width: inherit;
+background: #45688e;
+color: #FFFFFF;
+margin: -5px -20px 0;
+padding: 17px 20px 17px 20px;
+overflow: hidden;
+border: none;
+font: normal 16px/1 Arial, Helvetica, sans-serif;
+color: rgba(255,255,255,1);
+text-align: center;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+background: #45688e;
+-webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0.3) ;
+box-shadow: 0 0 0 0 rgba(0,0,0,0.3) ;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+text-decoration: none;
+}
+
+#border{
+border:1px solid silver;
+margin-top: 10px;
+padding: 17px 20px 17px 20px;
+}
+
+#title2{
+width: inherit;
+background: #45688e;
+color: #FFFFFF;
+margin: -5px -20px 0;
+padding: 17px 20px 17px 20px;
+overflow: hidden;
+border: none;
+font: normal 16px/1 Arial, Helvetica, sans-serif;
+color: rgba(255,255,255,1);
+text-align: center;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+background: #45688e;
+-webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0.3) ;
+box-shadow: 0 0 0 0 rgba(0,0,0,0.3) ;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+text-decoration: none;
+}
+
+#border2{
+border:1px solid silver;
+margin-top: 10px;
+padding: 17px 20px 17px 20px;
+}
+
+#epsvalue{
+	color: #000000; 
+	visibility: hidden;
+	margin-left: 39px;
+}
